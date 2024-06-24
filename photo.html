@@ -304,5 +304,20 @@ p {
     </ul>
     <p class="text-center text-body-secondary">© 2015 Eventura</p>
   </footer>
+  <script>
+    function showGallery(occasion) {
+        const galleries = document.querySelectorAll('.gallery');
+        galleries.forEach(gallery => {
+            gallery.style.display = 'none';
+        });
+
+        document.getElementById(occasion).style.display = 'block';
+    }
+
+    function updateBudgetValue(value) {
+document.getElementById('budget-value').innerText = `₹${value}`;
+}
+
+</script>
 </body>
 </html>
